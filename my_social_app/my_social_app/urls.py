@@ -1,5 +1,5 @@
 """
-URL configuration for my_socail_app project.
+URL configuration for my_social_app project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -21,6 +21,7 @@ from django.contrib.staticfiles.urls import static, staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('accounts/', include('app_login.urls'))
 ]
 
 
