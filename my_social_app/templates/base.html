@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Add your common head content here -->
+</head>
+ <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+ <script src="{% static 'js/script.js' %}"></script>
+<body>
+      {% block title %}
+         Social Media Project
+      {% endblock %}
+
+      <div class="navbar">
+          <ul class="nav-links">
+             <li><a href=" ">Home</a></li>
+          </ul>
+      </div><!-- Add your header content here -->
+
+
+     <div class="container" style="padding-top:20px">
+         {% block body_block %}
+         {% endblock %}
+
+     </div>
+
