@@ -1,15 +1,26 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<head>
 <head>
     <!-- Add your common head content here -->
-</head>
+
  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
  <script src="{% static 'js/script.js' %}"></script>
-<body>
-      {% block title %}
+<title>
+    {% block title %}
          Social Media Project
       {% endblock %}
+</title>
+    {% block css_block %}
+
+    {% endblock %}
+
+
+
+
+</head>
+
+<body>
 
       <div class="navbar">
           <ul class="nav-links">
